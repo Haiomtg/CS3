@@ -16,8 +16,7 @@ class HocVien:
         print("Ngay Sinh:     ", self.ngaySinh)
         print("Nhung khoa hoc dang ky")
         for khoaHoc in self.listKhoaHoc:
-            khoaHoc = KhoaHoc()
-            KhoaHoc.thongTinKhoaHoc
+            print(khoaHoc)
             print("----------------------------------------")
     
 

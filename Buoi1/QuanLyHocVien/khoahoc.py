@@ -5,8 +5,9 @@ class KhoaHoc:
         self.hinhThuc = hinhThuc
         self.hocPhi = hocPhi
 
-    def thongTinKhoaHoc(self):
+    def hienThongTinKhoaHoc(self):
         print("Ma Khoa Hoc :  ", self.maKhoaHoc)
         print("Ten Khoa Hoc : ", self.tenKhoaHoc)
         print("Hinh Thuc :    ", self.hinhThuc)
         print("Hoc Phi :      ", self.hocPhi)
+        print("------------------------------")
