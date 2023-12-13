@@ -76,6 +76,21 @@ def thongTinKhoaHoc():
     for khoaHoc in listKhoaHoc:
         kHoc = KhoaHoc(khoaHoc["maKhoaHoc"], khoaHoc["tenKhoaHoc"], khoaHoc["hinhThuc"], khoaHoc["hocPhi"])
         kHoc.hienThongTinKhoaHoc()
+
+def themThongTinKhoaHoc():
+    maKhoaHoc = input("Hay nhap ma khoa hoc moi: ")
+    tenKhoaHoc = input("Hay nhap ten khoa hoc: ")
+    hinhThuc = input("Hay nhap hinh thuc hoc: ")
+    hocPhi = input("Hay nhap hoc phi: ")
+    listKhoaHoc.append(
+        {
+            "maKhoaHoc" : maKhoaHoc, 
+            "tenKhoaHoc" : tenKhoaHoc,
+            "hinhThuc" : hinhThuc, 
+            "hocPhi" : hocPhi
+        }
+    )
+
 flag = True
 while flag:
     print("Quan Ly Hoc Vien Cua Trung Tam:")
@@ -83,6 +98,8 @@ while flag:
     print("Nhap 2: De dang ky khoa hoc cho Hoc Vien")
     print("Nhap 3: De in thong tin hoc vien")
     print("Nhap 4: De them khoa hoc")
+    print("Nhap 5: De in thong tin khoa hoc")
+    print("Nhap E: de thoat")
     select = input("Nhap lua chon cua ban")
     match select:
         case "1":
@@ -93,6 +110,8 @@ while flag:
         case "3":
             thongTinHocVien()
         case "4":
+            themThongTinKhoaHoc()
+        case "5":
             thongTinKhoaHoc()
         case "E":
             flag = False
